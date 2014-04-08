@@ -1,0 +1,35 @@
+@(product: Product)
+
+@main("One product information") {
+	<div class="lead text-center">
+		Product information:
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-3"></div>
+		<div class="col-lg-6">
+			<table class="table table-striped table-bordered table-condensed">
+				<tr class="success">
+					<th colspan="2" class="text-center">Statistics of product: @product.getProductName()</th>
+				</tr>
+				<tr>
+					<th>Id</th><td>@product.getId()</td>
+				</tr>
+				<tr>
+					<th>Product name</th><td>@product.getProductName()</td>
+				</tr>
+				<tr>
+					<th>Description</th><td>@product.getDescription()</td>
+				</tr>
+				<tr>
+					<th>Cost</th><td>@product.getCost()</td>
+				</tr>
+				<tr>
+					<th>Rrp</th><td>@product.getRrp()</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-lg-3"></div>
+	</div>
+	@*@product.getProductName()*@
+}

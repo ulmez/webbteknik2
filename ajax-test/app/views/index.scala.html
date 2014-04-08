@@ -1,0 +1,24 @@
+@(message: String)
+
+@main("Welcome to Play") {
+	<div class="lead text-center">
+		List, insert, update and delete products:
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-8" id="products"></div>
+		<div class="col-lg-2"></div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-8 text-right"><button type="button" class="btn btn-default btn-success" id="create-new-product">Insert new product</button></div>
+		<div class="col-lg-2"></div>
+	</div>
+	
+    <script>
+    	loadListOfProducts();
+    	insertNewProduct();
+    </script>
+}
